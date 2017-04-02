@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="arduinolao.com.kinydee.KinYDeeActivity">
+
+    <RadioGroup
+        android:id="@+id/rgTypeMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:checked="true"
+            android:id="@+id/rdFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food" />
+
+        <RadioButton
+            android:theme="@style/MyRadioButton"
+            android:id="@+id/rdDrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drink" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:padding="10dp"
+        android:background="@drawable/imv_border"
+        android:text="ຜົນໄດ້ຮັບ"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewFood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/imv_border"
+        android:src="@drawable/icon_512px" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true" />
+
+    <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+        android:id="@+id/dot_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        custom:amount="5"
+        custom:duration="@android:integer/config_shortAnimTime"
+        custom:endColor="@color/colorAccent"
+        custom:startColor="@color/colorAccent"
+        custom:animationDirection="right"/>
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="ສຸ່ມອາຫານ"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+</RelativeLayout>
